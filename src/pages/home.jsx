@@ -7,6 +7,7 @@ import TransactionList from "../components/TransationList";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function Home({ provider, signer }) {
+    
   const [isConnected, setIsConnected] = useState(false);
   const [address, setAddress] = useState(null);
   const [balance, setBalance] = useState(null);

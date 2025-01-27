@@ -14,6 +14,7 @@ function App() {
   let provider;
   let signer;
 
+
   const [isConnected, setIsConnected] = useState(false);
   const [address, setAddress] = useState(null);
   const [balance, setBalance] = useState(null);
@@ -28,7 +29,7 @@ function App() {
       setAddress(signer.address)
       setBalance(ethers.formatEther(bal));
     } else {
-      console.log('We need a valid Signer');
+      console.log('No valid wallet discovered');
     }
   }
 
